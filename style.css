@@ -193,6 +193,39 @@ nav.main-nav a.cta-link:hover{ background: var(--teal-deep); }
   font-weight: 600;
   margin: 1rem 0 2rem;
 }
+
+/* ---------- Photo hero variant ---------- */
+.hero.photo{
+  background-size: cover;
+  background-position: center;
+  padding: 7rem 0 5.5rem;
+}
+.hero.photo::before{
+  background: linear-gradient(180deg, rgba(20,60,58,.55) 0%, rgba(20,60,58,.45) 45%, rgba(251,243,226,0.97) 100%);
+  height: 100%;
+  opacity: 1;
+}
+.hero.photo .eyebrow{ color: #eaf6f4; }
+.hero.photo h1{ color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.25); }
+.hero.photo .sub{ color: #fdf8ea; }
+
+/* ---------- Full-bleed photo banner (mid page) ---------- */
+.photo-banner{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 4.5rem 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+.photo-banner::before{
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient(90deg, rgba(20,60,58,.72), rgba(31,143,138,.42));
+}
+.photo-banner > *{ position: relative; z-index: 2; }
+.photo-banner h2{ color: #fff; text-shadow: 0 2px 14px rgba(0,0,0,.25); }
+.photo-banner p{ color: rgba(255,255,255,.92); max-width: 640px; margin: 0 auto 1.5rem; }
 .button-row{
   display: flex;
   gap: 1rem;
