@@ -295,6 +295,16 @@ nav.main-nav a.cta-link:hover{ background: var(--teal-deep); }
   margin: 0 auto 1rem;
   box-shadow: var(--shadow);
 }
+.avatar-photo{
+  width: 108px; height: 108px;
+  border-radius: 22px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1rem;
+  box-shadow: var(--shadow);
+  border: 3px solid var(--white);
+  background: var(--cream-soft);
+}
 
 /* ---------- Banner strips ---------- */
 .strip{
